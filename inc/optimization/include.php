@@ -203,8 +203,11 @@ if ( ! function_exists( 'dentalsvetiluka_limit_post_revisions' ) ) {
  */
 if ( ! function_exists( 'dentalsvetiluka_disable_capital_p_dangit' ) ) {
 	function dentalsvetiluka_disable_capital_p_dangit() {
-		remove_filter( 'the_title', 'capital_P_dangit', 11 );
 		remove_filter( 'the_content', 'capital_P_dangit', 11 );
+		remove_filter( 'the_title', 'capital_P_dangit', 11 );
+		remove_filter( 'wp_title', 'capital_P_dangit', 11 );
+		remove_filter( 'document_title', 'capital_P_dangit', 11 );
+		remove_filter( 'widget_text_content', 'capital_P_dangit', 11 );
 		remove_filter( 'comment_text', 'capital_P_dangit', 31 );
 	}
 
