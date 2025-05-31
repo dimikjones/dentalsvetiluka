@@ -1,0 +1,92 @@
+/* CSS variables */
+:root {
+	--dsl-main-color: #2e3092;
+}
+
+/* Working Hours button for call */
+.dsl-button-working-hours.qodef-button.qodef-layout--filled.qodef-size--full.qodef-html--link {
+	letter-spacing: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+/* Working Hours list custom HTML adj. */
+.qodef-working-hours-list.dsl-custom-list .qodef-working-hours-item {
+	margin-bottom: 11px;
+}
+
+/* Footer logo */
+figure.wp-block-image.dsl-footer-logo {
+	margin: 0 0 -22px 0;
+}
+
+/* Widgets for Google Reviews plugin adjustments start */
+.dsl-google-reviews .ti-widget.ti-goog .ti-profile-img img {
+	display: block;
+	width: 80px !important;
+	height: 80px !important;
+	padding: 8px !important;
+	border: 2px solid #eef7ff !important;
+	border-radius: 100% !important;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-review-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-platform-icon {
+	top: 0;
+	right: 19px;
+	width: 36px !important;
+	height: 36px !important;
+	padding: 8px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px !important;
+	border: 1px solid var(--dsl-main-color) !important;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container .ti-name {
+	font-family: Catamaran, sans-serif !important;
+	font-weight: 600;
+	color: #1e2d78;
+	font-size: 27px;
+	line-height: 1.296em;
+	margin: 0;
+	padding: 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	text-transform: capitalize;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-profile-img {
+	margin: 0 0 18px 0 !important;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-reviews-container-wrapper .ti-inner>.ti-stars,
+.dsl-google-reviews .ti-widget.ti-goog .ti-reviews-container-wrapper .ti-popup-inner>.ti-stars {
+	margin-bottom: 8px;
+	margin-top: 6px;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-rating-text strong.ti-rating {
+	font-family: Catamaran, sans-serif !important;
+	font-weight: 600 !important;
+	color: #1e2d78;
+	font-size: 42px !important;
+	line-height: 1 !important;
+	margin: 0 0 26px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container:not(.ti-col-1) .ti-footer {
+	margin: 0 !important;
+	align-self: center;
+	border: 2px solid var(--dsl-main-color) !important;
+	border-radius: 4px;
+	padding: 30px;
+}
