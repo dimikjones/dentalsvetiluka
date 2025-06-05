@@ -167,3 +167,26 @@ figure.wp-block-image.dsl-footer-logo {
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls .ti-next:before,
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls .ti-prev:before {
+	content: none;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls .ti-prev:after {
+	left: 8px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDExIDE3IiBmaWxsPSIjMmUzMDkyIj48cG9seWdvbiBwb2ludHM9IjkuNDYgMCAxMSAxLjM4IDMuMDcgOC41IDExIDE1LjYyIDkuNDYgMTcgMCA4LjUgOS40NiAwIj48L3BvbHlnb24+PC9zdmc+");
+	width: 11px;
+	height: 17px;
+	transform: none;
+	background-color: transparent;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls .ti-next:after {
+	right: 8px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDExIDE3IiBmaWxsPSIjMmUzMDkyIj48cG9seWdvbiBwb2ludHM9IjEuNTQgMTcgMCAxNS42MiA3LjkzIDguNSAwIDEuMzggMS41NCAwIDExIDguNSAxLjU0IDE3Ij48L3BvbHlnb24+PC9zdmc+");
+	width: 11px;
+	height: 17px;
+	transform: none;
+	background-color: transparent;
+}
