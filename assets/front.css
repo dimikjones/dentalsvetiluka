@@ -80,6 +80,69 @@ a[hreflang="en-GB"]:after {
 	margin-bottom: 11px;
 }
 
+/* floating contact actions start */
+.dsl-floating-contact-actions {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	right: 25px;
+	top: 50%;
+	transform: translateY(50%);
+	margin: 0;
+	z-index: 10000;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action:hover {
+	color: #fff;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action svg {
+	width: 60%;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action.dsl-contact-phone {
+	background-color: #00B0F8;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action.dsl-contact-phone svg {
+	width: 55%;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action.dsl-contact-whatsapp {
+	background-color: #65BB54;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action.dsl-contact-whatsapp {
+	background-color: #65BB54;
+}
+
+.dsl-floating-contact-actions .dsl-contact-action.dsl-contact-viber {
+	background-color: #7D3DAF;
+}
+
+@media screen and (max-width: 480px) {
+	.dsl-floating-contact-actions {
+		right: 10px;
+	}
+
+	.dsl-floating-contact-actions.dsl-contact-action {
+		width: 35px;
+		height: 35px;
+	}
+}
+/* floating contact actions end */
+
 /* Footer logo */
 figure.wp-block-image.dsl-footer-logo {
 	margin: 4px 0 -22px 0;
