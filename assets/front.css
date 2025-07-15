@@ -52,7 +52,7 @@ a[hreflang="en-GB"]:after {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 }
 
 .widget_polylang ul li {
