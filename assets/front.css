@@ -1,6 +1,7 @@
 /* CSS variables */
 :root {
 	--dsl-main-color: #2e3092;
+	--dsl-secondary-color: #C94726;
 	--dsl-text-color: #4c4c4c;
 }
 
@@ -72,6 +73,10 @@ a[hreflang="en-GB"]:after {
 	top: 4px;
 }
 
+.qodef-first-level-animation-line--no .qodef-header-navigation>ul>li>a:before {
+	background-color: var(--dsl-secondary-color);
+}
+
 /* Working Hours button for call */
 .dsl-button-working-hours.qodef-button.qodef-layout--filled.qodef-size--full.qodef-html--link {
 	letter-spacing: 0;
@@ -82,6 +87,10 @@ a[hreflang="en-GB"]:after {
 /* Working Hours list custom HTML adj. */
 .qodef-working-hours-list.dsl-custom-list .qodef-working-hours-item {
 	margin-bottom: 11px;
+}
+
+.qodef-section-title div.qodef-m-subtitle {
+	font-size: 15px;
 }
 
 /* Accordion counter color */
