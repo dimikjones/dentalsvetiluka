@@ -85,6 +85,11 @@ a[hreflang="en-GB"]:after {
 	color: #dceaf6;
 }
 
+.qodef-accordion.qodef-layout--simple .qodef-accordion-title,
+.qodef-accordion.qodef-layout--simple .qodef-accordion-content {
+	border-color: #dceaf6;
+}
+
 /* floating contact actions start */
 .dsl-floating-contact-actions {
 	position: fixed;
