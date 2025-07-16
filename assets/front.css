@@ -1,7 +1,11 @@
 /* CSS variables */
 :root {
 	--dsl-main-color: #2e3092;
-	--dsl-text-color: #8a8a8a;
+	--dsl-text-color: #4c4c4c;
+}
+
+body {
+	color: var(--dsl-text-color);
 }
 
 /* custom css classes */
@@ -88,6 +92,21 @@ a[hreflang="en-GB"]:after {
 .qodef-accordion.qodef-layout--simple .qodef-accordion-title,
 .qodef-accordion.qodef-layout--simple .qodef-accordion-content {
 	border-color: #dceaf6;
+}
+
+@media screen and (max-width: 480px) {
+	.qodef-accordion.qodef-layout--simple .qodef-accordion-title,
+	.qodef-accordion.qodef-layout--simple .qodef-accordion-content {
+		padding: 22px 20px 22px 30px;
+	}
+
+	.qodef-accordion.qodef-layout--simple .qodef-accordion-title:before {
+		left: 9px;
+	}
+
+	.qodef-accordion.qodef-layout--simple .qodef-accordion-title .qodef-accordion-mark {
+		right: -5px;
+	}
 }
 
 /* floating contact actions start */
@@ -227,6 +246,12 @@ figure.wp-block-image.dsl-footer-logo {
 	border: 2px solid var(--dsl-main-color) !important;
 	border-radius: 4px;
 	padding: 30px;
+}
+
+@media only screen and (max-width: 680px) {
+	.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container .ti-footer {
+		margin: 30px 0 0 0 !important;
+	}
 }
 
 .dsl-google-reviews .ti-widget.ti-goog .ti-review-content {
