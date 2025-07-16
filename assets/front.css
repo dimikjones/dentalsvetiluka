@@ -80,6 +80,11 @@ a[hreflang="en-GB"]:after {
 	margin-bottom: 11px;
 }
 
+/* Accordion counter color */
+.qodef-accordion.qodef-layout--simple .qodef-accordion-title:before {
+	color: #dceaf6;
+}
+
 /* floating contact actions start */
 .dsl-floating-contact-actions {
 	position: fixed;
@@ -211,7 +216,7 @@ figure.wp-block-image.dsl-footer-logo {
 	word-wrap: break-word;
 }
 
-.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container:not(.ti-col-1) .ti-footer {
+.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container .ti-footer {
 	margin: 0 !important;
 	align-self: center;
 	border: 2px solid var(--dsl-main-color) !important;
