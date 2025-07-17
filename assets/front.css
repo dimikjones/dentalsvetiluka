@@ -31,6 +31,11 @@ body {
 	line-height: 1.296em;
 }
 
+.dsl-list-h4-to-h5-size h5.qodef-m-title {
+	font-size: 19px;
+	line-height: 1.316em;
+}
+
 /* gallery pagination */
 .dsl-gallery-pagination-adj.qodef-image-gallery.swiper-horizontal {
 	padding-bottom: 40px;
