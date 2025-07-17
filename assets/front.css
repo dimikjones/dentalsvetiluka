@@ -160,15 +160,21 @@ a[hreflang="en-GB"]:after {
 	margin: 2em 0;
 }
 
-.wp-block-media-text.alignwide.is-stacked-on-mobile {
+.wp-block-media-text.is-vertically-aligned-top.is-stacked-on-mobile {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	gap: 2em;
 }
 
-.wp-block-media-text.alignwide.is-stacked-on-mobile > * {
+.wp-block-media-text.is-vertically-aligned-top.is-stacked-on-mobile > * {
 	flex-basis: 50%;
+}
+
+@media screen and (max-width: 680px) {
+	.wp-block-media-text.is-vertically-aligned-top.is-stacked-on-mobile {
+		flex-direction: column;
+	}
 }
 /* frontend block media and text end */
 
