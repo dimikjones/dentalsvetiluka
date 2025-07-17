@@ -95,6 +95,21 @@ a[hreflang="en-GB"]:after {
 	top: 4px;
 }
 
+.qodef-mobile-header-opener.qodef-opener-icon .qodef-m-icon {
+	background-color: #2e3092;
+}
+
+.qodef-mobile-header-opener.qodef-opener-icon.qodef-source--predefined .qodef-m-line {
+	background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+	.qodef-mobile-header--standard #qodef-page-mobile-header-inner>.qodef-content-grid {
+		width: 100%;
+		padding: 0 40px;
+	}
+}
+
 .qodef-first-level-animation-line--no .qodef-header-navigation>ul>li>a:before {
 	background-color: var(--dsl-secondary-color);
 }
@@ -139,6 +154,23 @@ a[hreflang="en-GB"]:after {
 		right: -5px;
 	}
 }
+
+/* frontend block media and text start */
+.wp-block-media-text {
+	margin: 2em 0;
+}
+
+.wp-block-media-text.alignwide.is-stacked-on-mobile {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 2em;
+}
+
+.wp-block-media-text.alignwide.is-stacked-on-mobile > * {
+	flex-basis: 50%;
+}
+/* frontend block media and text end */
 
 /* floating contact actions start */
 .dsl-floating-contact-actions {
