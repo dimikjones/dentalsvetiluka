@@ -103,6 +103,13 @@ a[hreflang="en-GB"]:after {
 	background-color: #fff;
 }
 
+#qodef-top-area {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
 	.qodef-mobile-header--standard #qodef-page-mobile-header-inner>.qodef-content-grid {
 		width: 100%;
@@ -371,15 +378,26 @@ figure.wp-block-image.dsl-footer-logo {
 
 	#qodef-page-header {
 		display: none;
+		margin: 0 !important;
 	}
 
 	#qodef-page-mobile-header {
 		display: block;
+		position: fixed;
+		top: 40px;
+		left: 0;
+		width: 100%;
 	}
 
 	/* preventing sticky */
 	#qodef-page-outer {
-		padding-top: 0 !important;
+		padding-top: 110px !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#qodef-top-area {
+		display: block;
 	}
 }
 
