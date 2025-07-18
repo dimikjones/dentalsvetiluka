@@ -389,6 +389,10 @@ figure.wp-block-image.dsl-footer-logo {
 		width: 100%;
 	}
 
+	.qodef-mobile-header-navigation ul li {
+		text-align: center;
+	}
+
 	/* preventing sticky */
 	#qodef-page-outer {
 		padding-top: 110px !important;
