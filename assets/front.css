@@ -103,13 +103,6 @@ a[hreflang="en-GB"]:after {
 	background-color: #fff;
 }
 
-#qodef-top-area {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
 @media only screen and (min-width: 768px) {
 	.qodef-mobile-header--standard #qodef-page-mobile-header-inner>.qodef-content-grid {
 		width: 100%;
@@ -376,6 +369,13 @@ figure.wp-block-image.dsl-footer-logo {
 
 @media only screen and (max-width: 1200px) {
 
+	#qodef-top-area {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
 	#qodef-page-header {
 		display: none;
 		margin: 0 !important;
@@ -392,6 +392,24 @@ figure.wp-block-image.dsl-footer-logo {
 	/* preventing sticky */
 	#qodef-page-outer {
 		padding-top: 110px !important;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+
+	#qodef-top-area .qodef-top-area-right .qodef-widget-holder > .widget:first-child {
+		margin: 0 !important;
+	}
+
+	#qodef-top-area .qodef-top-area-right .qodef-widget-holder > .widget:not(:first-child) {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days {
+		display: none;
 	}
 }
 
