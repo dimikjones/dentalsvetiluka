@@ -121,6 +121,15 @@ a[hreflang="en-GB"]:after {
 	border-top-right-radius: 0;
 }
 
+/* Blog excerpt clamp */
+.qodef-blog .qodef-blog-item .qodef-e-excerpt {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 /* Working Hours list custom HTML adj. */
 .qodef-working-hours-list.dsl-custom-list .qodef-working-hours-item {
 	margin-bottom: 11px;
@@ -128,6 +137,12 @@ a[hreflang="en-GB"]:after {
 
 .qodef-section-title div.qodef-m-subtitle {
 	font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+	.qodef-section-title div.qodef-m-subtitle {
+		font-size: 13px;
+	}
 }
 
 /* Accordion counter color */
