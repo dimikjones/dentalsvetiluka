@@ -376,6 +376,11 @@ figure.wp-block-image.dsl-footer-logo {
 	#qodef-page-mobile-header {
 		display: block;
 	}
+
+	/* preventing sticky */
+	#qodef-page-outer {
+		padding-top: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
