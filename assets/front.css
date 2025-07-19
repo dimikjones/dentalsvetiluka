@@ -130,6 +130,10 @@ a[hreflang="en-GB"]:after {
 	text-overflow: ellipsis;
 }
 
+.qodef-tabs.qodef-layout--simple.qodef-orientation--horizontal .qodef-tabs-navigation+.qodef-main-menu-line {
+	border-bottom-color: var(--dsl-secondary-color);
+}
+
 /* Working Hours list custom HTML adj. */
 .qodef-working-hours-list.dsl-custom-list .qodef-working-hours-item {
 	margin-bottom: 11px;
@@ -246,7 +250,7 @@ a[hreflang="en-GB"]:after {
 
 @media screen and (max-width: 480px) {
 	.dsl-floating-contact-actions {
-		right: 10px;
+		right: 4px;
 	}
 
 	.dsl-floating-contact-actions.dsl-contact-action {
@@ -373,6 +377,14 @@ figure.wp-block-image.dsl-footer-logo {
 	background-color: transparent;
 }
 
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls-line {
+	background: #ffe1e1;
+}
+
+.dsl-google-reviews .ti-widget.ti-goog .ti-controls-line .dot {
+	background: var(--dsl-secondary-color);
+}
+
 /* Responsive adjustments */
 @media only screen and (max-width: 1300px) {
 
@@ -427,8 +439,20 @@ figure.wp-block-image.dsl-footer-logo {
 
 @media only screen and (max-width: 480px) {
 
-	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days {
-		display: none;
+	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days .dsl-day-start,
+	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days .dsl-day-end {
+		white-space: nowrap;
+		overflow: hidden;
+		display: inline-flex;
+		text-overflow: clip;
+	}
+
+	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days .dsl-day-start {
+		width: 26px;
+	}
+
+	#qodef-top-area .qodef-top-area-left .qodef-widget-holder .qodef-icon-list-item .dsl-days .dsl-day-end {
+		width: 23px;
 	}
 }
 
