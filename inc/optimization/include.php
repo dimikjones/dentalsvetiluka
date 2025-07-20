@@ -231,8 +231,10 @@ if ( ! function_exists( 'dentalsvetiluka_offload_multiple_stylesheets' ) ) {
 			'elementor-frontend',
 			'ionicons',
 			'linear-icons',
+			'linea-icons',
 			'font-awesome',
 			'dripicons',
+			'elegant-icons',
 		);
 
 		// Check if the current stylesheet's handle is in our list of offload handles.
