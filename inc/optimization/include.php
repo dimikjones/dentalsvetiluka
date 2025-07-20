@@ -213,3 +213,38 @@ if ( ! function_exists( 'dentalsvetiluka_disable_capital_p_dangit' ) ) {
 
 	add_action( 'init', 'dentalsvetiluka_disable_capital_p_dangit' );
 }
+
+if ( ! function_exists( 'dentalsvetiluka_offload_multiple_stylesheets' ) ) {
+	/**
+	 * Adds the rel='preload' to stylesheets and onload replace it with rel='stylesheet' in order to offload them.
+	 *
+	 * @param string $html The complete HTML <link> tag.
+	 * @param string $handle The stylesheet's registered handle.
+	 *
+	 * @return string The modified HTML <link> tag with rel='preload' attribute, or original HTML.
+	 */
+	function dentalsvetiluka_offload_multiple_stylesheets( $html, $handle ) {
+		// Define an array of stylesheet handles that you want to offload.
+		$offload_handles = array(
+			'swiper',
+			'elementor-icons',
+			'elementor-frontend',
+			'ionicons',
+			'linear-icons',
+			'font-awesome',
+			'dripicons',
+		);
+
+		// Check if the current stylesheet's handle is in our list of offload handles.
+		if ( in_array( $handle, $offload_handles ) ) {
+			// If it is, preload styles
+			// return str_replace( "media='stylesheet'", "rel='preload' as='style'" . "onload=\"this.rel='stylesheet'\"", $html ).
+			return str_replace( "rel='stylesheet'", "rel=\"preload\" as=\"style\" onload=\"this.rel=&#39;stylesheet&#39;\"", $html );
+		}
+
+		// If the handle is not in our list, return the original HTML.
+		return $html;
+	}
+
+	add_filter( 'style_loader_tag', 'dentalsvetiluka_offload_multiple_stylesheets', 10, 2 );
+}
