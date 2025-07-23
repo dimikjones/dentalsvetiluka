@@ -25,11 +25,3 @@ if ( ! function_exists( 'dentalsvetiluka_add_team_cpt_to_pll' ) ) {
 
 	add_filter( 'pll_get_post_types', 'dentalsvetiluka_add_team_cpt_to_pll', 10, 2 );
 }
-
-if ( ! function_exists( 'dentalsvetiluka_copy_post_metas' ) ) {
-	function dentalsvetiluka_copy_post_metas( $metas ) {
-		return array_merge( $metas, array( 'qodef_team_member_description' ) );
-	}
-
-	add_filter( 'pll_copy_post_metas', 'dentalsvetiluka_copy_post_metas' );
-}
