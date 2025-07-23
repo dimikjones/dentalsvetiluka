@@ -1,0 +1,514 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">clients</custom-type>
+		<custom-type translate="1">team</custom-type>
+		<custom-type translate="1">testimonials</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">clients-category</taxonomy>
+		<taxonomy translate="1">team-category</taxonomy>
+		<taxonomy translate="1">testimonials-category</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate" translate_link_target="1">qodef_post_format_video_url</custom-field>
+		<custom-field action="translate" translate_link_target="1">qodef_post_format_audio_url</custom-field>
+		<custom-field action="translate">qodef_post_format_link</custom-field>
+		<custom-field action="translate">qodef_post_format_link_text</custom-field>
+		<custom-field action="translate">qodef_post_format_quote_author</custom-field>
+		<custom-field action="translate">qodef_dropdown_top_position</custom-field>
+		<custom-field action="translate">qodef_page_title_subtitle</custom-field>
+		<custom-field action="translate">qodef_client_link</custom-field>
+		<custom-field action="translate">qodef_team_member_role</custom-field>
+		<custom-field action="translate">qodef_team_member_education</custom-field>
+		<custom-field action="translate">qodef_team_member_speciality</custom-field>
+		<custom-field action="translate">qodef_team_member_phone</custom-field>
+		<custom-field action="translate">qodef_team_member_additional_phone</custom-field>
+		<custom-field action="translate">qodef_team_member_address</custom-field>
+		<custom-field action="translate">qodef_team_member_email</custom-field>
+		<custom-field action="translate">qodef_team_member_booking_period</custom-field>
+		<custom-field action="translate">qodef_team_member_call_to_action_label</custom-field>
+		<custom-field action="translate" translate_link_target="1">qodef_team_member_call_to_action_url</custom-field>
+		<custom-field action="translate">qodef_testimonials_title</custom-field>
+		<custom-field action="translate">qodef_testimonials_subtitle</custom-field>
+		<custom-field action="translate">qodef_testimonials_author</custom-field>
+		<custom-field action="translate">qodef_testimonials_author_job</custom-field>
+		<custom-field action="translate">qodef_post_format_quote_text</custom-field>
+		<custom-field action="translate">qodef_team_member_description</custom-field>
+		<custom-field action="translate">qodef_team_member_training</custom-field>
+		<custom-field action="translate">qodef_testimonials_text</custom-field>
+		<custom-field action="copy">qodef_blog_list_image</custom-field>
+		<custom-field action="copy">qodef_post_format_gallery_images</custom-field>
+		<custom-field action="copy">qodef_page_background_image</custom-field>
+		<custom-field action="copy">qodef_boxed_background_pattern</custom-field>
+		<custom-field action="copy">qodef_passepartout_image</custom-field>
+		<custom-field action="copy">qodef_top_footer_area_background_image</custom-field>
+		<custom-field action="copy">qodef_logo_main</custom-field>
+		<custom-field action="copy">qodef_logo_dark</custom-field>
+		<custom-field action="copy">qodef_logo_light</custom-field>
+		<custom-field action="copy">qodef_logo_sticky</custom-field>
+		<custom-field action="copy">qodef_mobile_logo_main</custom-field>
+		<custom-field action="copy">qodef_page_title_background_image</custom-field>
+		<custom-field action="copy">qodef_product_list_image</custom-field>
+		<custom-field action="copy">qodef_logo_image</custom-field>
+		<custom-field action="copy">qodef_logo_hover_image</custom-field>
+		<custom-field action="copy">qodef_team_member_social_icons</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="allsmiles_core_options">
+			<key name="qodef_dropdown_top_position" />
+			<key name="qodef_search_page_excerpt_number_of_characters" />
+			<key name="qodef_blog_list_excerpt_number_of_characters" />
+			<key name="qodef_twitter_via" />
+			<key name="qodef_team_booking_email" />
+			<key name="qodef_working_hours_monday" />
+			<key name="qodef_working_hours_tuesday" />
+			<key name="qodef_working_hours_wednesday" />
+			<key name="qodef_working_hours_thursday" />
+			<key name="qodef_working_hours_friday" />
+			<key name="qodef_working_hours_saturday" />
+			<key name="qodef_working_hours_sunday" />
+			<key name="qodef_working_hours_special_text" />
+			<key name="qodef_age_verification_title" />
+			<key name="qodef_age_verification_subtitle" />
+			<key name="qodef_age_verification_note" />
+			<key name="qodef_age_verification_link" />
+			<key name="qodef_subscribe_popup_title" />
+			<key name="qodef_subscribe_popup_subtitle" />
+			<key name="qodef_404_page_title" />
+			<key name="qodef_404_page_text" />
+			<key name="qodef_404_page_button_text" />
+			<key name="qodef_page_background_image" />
+			<key name="qodef_boxed_background_pattern" />
+			<key name="qodef_passepartout_image" />
+			<key name="qodef_logo_main" />
+			<key name="qodef_logo_dark" />
+			<key name="qodef_logo_light" />
+			<key name="qodef_logo_sticky" />
+			<key name="qodef_mobile_logo_main" />
+			<key name="qodef_page_title_background_image" />
+			<key name="qodef_top_footer_area_background_image" />
+			<key name="qodef_age_verification_logo_image" />
+			<key name="qodef_age_verification_background_image" />
+			<key name="qodef_subscribe_popup_background_image" />
+			<key name="qodef_404_page_background_image" />
+		</key>
+		<key name="allsmiles_core_blog_list">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="post_ids" />
+				<key name="tax_slug" />
+				<key name="tax__in" />
+				<key name="author_slug" />
+			</key>
+		</key>
+		<key name="allsmiles_core_contact_form_7">
+			<key name="*">
+				<key name="widget_title" />
+			</key>
+		</key>
+		<key name="allsmiles_core_button">
+			<key name="*">
+				<key name="text" />
+				<key name="link" />
+				<key name="input_name" />
+			</key>
+		</key>
+		<key name="allsmiles_core_custom_font">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+		<key name="allsmiles_core_icon">
+			<key name="*">
+				<key name="link" />
+			</key>
+		</key>
+		<key name="allsmiles_core_icon_list_item">
+			<key name="*">
+				<key name="link" />
+				<key name="title" />
+			</key>
+		</key>
+		<key name="allsmiles_core_social_share">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+		<key name="allsmiles_core_author_info">
+			<key name="*">
+				<key name="author_username" />
+			</key>
+		</key>
+		<key name="allsmiles_core_contact_info">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="link" />
+			</key>
+		</key>
+		<key name="allsmiles_core_social_icons_group">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="link_1" />
+				<key name="link_2" />
+				<key name="link_3" />
+				<key name="link_4" />
+				<key name="link_5" />
+			</key>
+		</key>
+		<key name="allsmiles_core_working_hours_list">
+			<key name="*">
+				<key name="widget_title" />
+			</key>
+		</key>
+	</admin-texts>
+	<shortcodes>
+		<shortcode>
+			<tag>allsmiles_core_icon</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_button</tag>
+			<attributes>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_accordion_child</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>layout</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_banner</tag>
+			<attributes>
+				<attribute>link_url</attribute>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+				<attribute>text_field</attribute>
+				<attribute>text</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_call_to_action</tag>
+			<attributes>
+				<attribute>content</attribute>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_cards_gallery</tag>
+			<attributes>
+				<attribute type="area" encoding="urlencoded_json">children</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_countdown</tag>
+			<attributes>
+				<attribute>date_hour</attribute>
+				<attribute>date_minute</attribute>
+				<attribute>week_label</attribute>
+				<attribute>week_label_plural</attribute>
+				<attribute>day_label</attribute>
+				<attribute>day_label_plural</attribute>
+				<attribute>hour_label</attribute>
+				<attribute>hour_label_plural</attribute>
+				<attribute>minute_label</attribute>
+				<attribute>minute_label_plural</attribute>
+				<attribute>second_label</attribute>
+				<attribute>second_label_plural</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_counter</tag>
+			<attributes>
+				<attribute>start_digit</attribute>
+				<attribute>end_digit</attribute>
+				<attribute>step_digit</attribute>
+				<attribute>step_delay</attribute>
+				<attribute>digit_label</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_custom_font</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_dropcaps</tag>
+			<attributes>
+				<attribute>letter</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_google_map</tag>
+			<attributes>
+				<attribute>address1</attribute>
+				<attribute>address2</attribute>
+				<attribute>address3</attribute>
+				<attribute>address4</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_highlight</tag>
+			<attributes>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_icon_list_item</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_icon_with_text</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>svg_icon</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_image_marquee</tag>
+			<attributes>
+				<attribute>duration</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_image_with_text</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_pricing_table</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>price</attribute>
+				<attribute>currency</attribute>
+				<attribute>period</attribute>
+				<attribute>content</attribute>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_section_title</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>special_style_positions</attribute>
+				<attribute>link</attribute>
+				<attribute>subtitle</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_single_image</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_tabs_child</tag>
+			<attributes>
+				<attribute>tab_title</attribute>
+				<attribute>layout</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_video_button</tag>
+			<attributes>
+				<attribute>video_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>allsmiles_core_social_share</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+	</shortcodes>
+	<elementor-widgets>
+		<widget name="allsmiles_core_icon">
+			<fields>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_button">
+			<fields>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_accordion_child">
+			<fields>
+				<field>title</field>
+				<field>layout</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_banner">
+			<fields>
+				<field>link_url</field>
+				<field>title</field>
+				<field>subtitle</field>
+				<field>text_field</field>
+				<field>text</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_call_to_action">
+			<fields>
+				<field>content</field>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_cards_gallery">
+			<fields-in-item items_of="children">
+				<field>item_link</field>
+			</fields-in-item>
+		</widget>
+		<widget name="allsmiles_core_countdown">
+			<fields>
+				<field>date_hour</field>
+				<field>date_minute</field>
+				<field>week_label</field>
+				<field>week_label_plural</field>
+				<field>day_label</field>
+				<field>day_label_plural</field>
+				<field>hour_label</field>
+				<field>hour_label_plural</field>
+				<field>minute_label</field>
+				<field>minute_label_plural</field>
+				<field>second_label</field>
+				<field>second_label_plural</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_counter">
+			<fields>
+				<field>start_digit</field>
+				<field>end_digit</field>
+				<field>step_digit</field>
+				<field>step_delay</field>
+				<field>digit_label</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_custom_font">
+			<fields>
+				<field>title</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_dropcaps">
+			<fields>
+				<field>letter</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_google_map">
+			<fields>
+				<field>address1</field>
+				<field>address2</field>
+				<field>address3</field>
+				<field>address4</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_highlight">
+			<fields>
+				<field>text</field>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_icon_list_item">
+			<fields>
+				<field>link</field>
+				<field>title</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_icon_with_text">
+			<fields>
+				<field>link</field>
+				<field>svg_icon</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_image_marquee">
+			<fields>
+				<field>duration</field>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_image_with_text">
+			<fields>
+				<field>link</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_pricing_table">
+			<fields>
+				<field>title</field>
+				<field>price</field>
+				<field>currency</field>
+				<field>period</field>
+				<field>content</field>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_section_title">
+			<fields>
+				<field>title</field>
+				<field>special_style_positions</field>
+				<field>link</field>
+				<field>subtitle</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_single_image">
+			<fields>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_tabs_child">
+			<fields>
+				<field>tab_title</field>
+				<field>layout</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_video_button">
+			<fields>
+				<field>video_link</field>
+			</fields>
+		</widget>
+		<widget name="allsmiles_core_social_share">
+			<fields>
+				<field>title</field>
+			</fields>
+		</widget>
+	</elementor-widgets>
+</wpml-config>
