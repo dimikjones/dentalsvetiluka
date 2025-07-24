@@ -197,6 +197,11 @@ a[hreflang="en-GB"]:after {
 }
 /* frontend block media and text end */
 
+/* team list prevent single links navigation */
+.qodef-team-list.qodef-item-layout--info-below a {
+	pointer-events: none;
+}
+
 /* floating contact actions start */
 .dsl-floating-contact-actions {
 	position: fixed;
