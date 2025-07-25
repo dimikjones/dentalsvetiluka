@@ -61,7 +61,7 @@ class Dental_Custom_Html_Widget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance                = array();
 		$instance['title']       = sanitize_text_field( $new_instance['title'] );
-		$instance['custom_html'] = wp_kses_post( $new_instance['custom_html'] );
+		$instance['custom_html'] = allsmiles_wp_kses_html( 'html', $new_instance['custom_html'] );
 		return $instance;
 	}
 
@@ -73,7 +73,7 @@ class Dental_Custom_Html_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$title       = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
-		$custom_html = isset( $instance['custom_html'] ) ? wp_kses_post( $instance['custom_html'] ) : '';
+		$custom_html = isset( $instance['custom_html'] ) ? allsmiles_wp_kses_html( 'html', $instance['custom_html'] ) : '';
 		?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'dentalsvetiluka' ); ?></label>
