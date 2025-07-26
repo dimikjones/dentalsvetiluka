@@ -385,9 +385,40 @@ figure.wp-block-image.dsl-footer-logo {
 .dsl-google-reviews .ti-widget.ti-goog .ti-widget-container .ti-footer {
 	margin: 0 !important;
 	align-self: center;
-	border: 2px solid var(--dsl-main-color) !important;
+	border: 0 !important;
 	border-radius: 4px;
 	padding: 30px;
+	position: relative;
+	background-color: #fff;
+}
+
+/* 1. Define the custom property for the angle */
+@property --gradient-angle {
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false; /* Or true, depending on whether you want child elements to inherit it */
+}
+
+/* 2. Style the ::before pseudo-element */
+.dsl-google-reviews .ti-widget.ti-goog .ti-widget-container .ti-footer:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	background-image: conic-gradient(from var(--gradient-angle), #00B0F8, #C94726, #65BB54);
+	filter: blur(10px);
+	z-index: -1;
+	animation: rotateGlow 15s linear infinite;
+}
+
+/* 3. Define the animation */
+@keyframes rotateGlow {
+	to {
+		--gradient-angle: 360deg; /* Animate the custom property */
+	}
 }
 
 @media only screen and (max-width: 680px) {
