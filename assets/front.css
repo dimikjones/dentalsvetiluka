@@ -408,10 +408,10 @@ figure.wp-block-image.dsl-footer-logo {
 	top: -3px;
 	width: calc(100% + 6px);
 	height: calc(100% + 6px);
-	background-image: conic-gradient(from var(--gradient-angle), #00B0F8, #C94726, #65BB54);
-	filter: blur(10px);
+	background-image: conic-gradient(from var(--gradient-angle), #4285F4, #EA4335, #FBBC05, #34A853);
+	filter: blur(6px);
 	z-index: -1;
-	animation: rotateGlow 15s linear infinite;
+	animation: rotateGlow 6s linear infinite;
 }
 
 /* 3. Define the animation */
