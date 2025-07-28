@@ -250,3 +250,29 @@ if ( ! function_exists( 'dentalsvetiluka_offload_multiple_stylesheets' ) ) {
 
 	add_filter( 'style_loader_tag', 'dentalsvetiluka_offload_multiple_stylesheets', 10, 2 );
 }
+
+if ( ! function_exists( 'dentalsvetiluka_dequeue_multiple_stylesheets' ) ) {
+	/**
+	 * Dequeues multiple stylesheets from being loaded.
+	 */
+	function dentalsvetiluka_dequeue_multiple_stylesheets() {
+		// Define an array of stylesheet handles that you want to dequeue.
+		$dequeue_handles = array(
+			'swiper',
+			'elementor-icons',
+			'elementor-frontend',
+			'ionicons',
+			'linear-icons',
+			'linea-icons',
+			'font-awesome',
+			'dripicons',
+			'elegant-icons',
+		);
+
+		foreach ( $dequeue_handles as $handle ) {
+			wp_dequeue_style( $handle );
+		}
+	}
+
+	//add_action( 'wp_enqueue_scripts', 'dentalsvetiluka_dequeue_multiple_stylesheets', 999 );
+}
