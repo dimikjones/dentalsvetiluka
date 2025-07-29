@@ -225,6 +225,14 @@ body {
 	pointer-events: none;
 }
 
+.qodef-team-list.qodef-item-layout--info-below .qodef-e-social-icons-inner {
+	will-change: width;
+}
+
+.qodef-team-list.qodef-item-layout--info-below .qodef-e-social-icons-inner a {
+	pointer-events: all;
+}
+
 /* floating contact actions start */
 .dsl-floating-contact-actions {
 	position: fixed;
