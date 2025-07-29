@@ -114,6 +114,18 @@ body {
 	top: 7px;
 }
 
+/* Hide blog sub menu items */
+.qodef-header-navigation>ul>li.menu-item-680 .qodef-drop-down-second,
+.qodef-header-navigation>ul>li.menu-item-880 .qodef-drop-down-second {
+	display: none;
+}
+
+/* Hide blog sub menu items on mobile */
+.qodef-mobile-header-navigation ul li.menu-item-680 .qodef-menu-item-arrow,
+.qodef-mobile-header-navigation ul li.menu-item-880 .qodef-menu-item-arrow {
+	display: none;
+}
+
 .qodef-mobile-header--standard #qodef-page-mobile-header-inner .qodef-mobile-header-logo-link {
 	top: 4px;
 }
@@ -511,6 +523,12 @@ figure.wp-block-image.dsl-footer-logo {
 
 	.qodef-mobile-header-navigation ul li {
 		text-align: center;
+	}
+
+	.qodef-mobile-header-navigation>ul>li.current-menu-ancestor>a .qodef-menu-item-text-inner:after,
+	.qodef-mobile-header-navigation>ul>li.current-menu-item>a .qodef-menu-item-text-inner:after {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	/* preventing sticky */
