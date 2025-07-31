@@ -414,7 +414,7 @@ figure.wp-block-image.dsl-footer-logo {
 	border-radius: 4px;
 	padding: 30px;
 	position: relative;
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
 }
 
 /* 1. Define the custom property for the angle */
