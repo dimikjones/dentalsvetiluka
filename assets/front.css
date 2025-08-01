@@ -47,6 +47,14 @@ body {
 	height: 15px;
 }
 
+/* hide nav on mobile */
+@media screen and (max-width: 680px) {
+	.dsl-gallery-pagination-adj.qodef-image-gallery.swiper-horizontal .swiper-button-next,
+	.dsl-gallery-pagination-adj.qodef-image-gallery.swiper-horizontal .swiper-button-prev {
+		display: none;
+	}
+}
+
 /* language switcher */
 .widget_polylang a[hreflang="sr-RS"] img,
 .widget_polylang a[hreflang="en-GB"] img {
