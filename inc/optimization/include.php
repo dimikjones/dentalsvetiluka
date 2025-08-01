@@ -226,6 +226,7 @@ if ( ! function_exists( 'dentalsvetiluka_offload_multiple_stylesheets' ) ) {
 	function dentalsvetiluka_offload_multiple_stylesheets( $html, $handle ) {
 		// Define an array of stylesheet handles that you want to offload.
 		$offload_handles = array(
+			'dentalsvetiluka-style',
 			'swiper',
 			'elementor-icons',
 			'elementor-frontend',
@@ -258,7 +259,7 @@ if ( ! function_exists( 'dentalsvetiluka_dequeue_multiple_stylesheets' ) ) {
 	function dentalsvetiluka_dequeue_multiple_stylesheets() {
 		// Define an array of stylesheet handles that you want to dequeue.
 		$dequeue_handles = array(
-			/*'elementor-icons',*/
+			'elementor-icons',
 			'ionicons',
 			'linear-icons',
 			'linea-icons',
