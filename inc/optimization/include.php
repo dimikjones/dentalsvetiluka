@@ -258,13 +258,10 @@ if ( ! function_exists( 'dentalsvetiluka_dequeue_multiple_stylesheets' ) ) {
 	function dentalsvetiluka_dequeue_multiple_stylesheets() {
 		// Define an array of stylesheet handles that you want to dequeue.
 		$dequeue_handles = array(
-			'swiper',
-			'elementor-icons',
-			'elementor-frontend',
+			/*'elementor-icons',*/
 			'ionicons',
 			'linear-icons',
 			'linea-icons',
-			'font-awesome',
 			'dripicons',
 			'elegant-icons',
 		);
@@ -274,5 +271,5 @@ if ( ! function_exists( 'dentalsvetiluka_dequeue_multiple_stylesheets' ) ) {
 		}
 	}
 
-	//add_action( 'wp_enqueue_scripts', 'dentalsvetiluka_dequeue_multiple_stylesheets', 999 );
+	add_action( 'wp_enqueue_scripts', 'dentalsvetiluka_dequeue_multiple_stylesheets', 999 );
 }
