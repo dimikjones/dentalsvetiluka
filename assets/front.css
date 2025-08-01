@@ -495,6 +495,25 @@ figure.wp-block-image.dsl-footer-logo {
 	background: var(--dsl-secondary-color);
 }
 
+/* Back to top to font awesome */
+#qodef-back-to-top .qodef-back-to-top-icon * {
+	display: flex;
+}
+
+#qodef-back-to-top .qodef-back-to-top-icon > span:before {
+	content: "\f106";
+	font-size: 17px;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+	font-weight: var(--fa-style, 900);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: var(--fa-display, inline-block);
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-rendering: auto;
+}
+
 /* Responsive adjustments */
 @media only screen and (max-width: 1300px) {
 
