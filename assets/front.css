@@ -178,6 +178,11 @@ body {
 	content: none;
 }
 
+/* Hide team single appointment button */
+.qodef-team-single .qodef-team-list-item .qodef-e-info .qodef-e-info-item.qodef--call-to-action {
+	display: none;
+}
+
 .qodef-tabs.qodef-layout--simple.qodef-orientation--horizontal .qodef-tabs-navigation+.qodef-main-menu-line {
 	border-bottom-color: var(--dsl-secondary-color);
 }
