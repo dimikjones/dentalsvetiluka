@@ -250,6 +250,18 @@ body {
 }
 /* frontend block media and text end */
 
+
+/* footer copyright text */
+.dsl-copyright {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.dsl-copyright {
+		font-size: 13px;
+	}
+}
+
 /* team list prevent single links navigation */
 .qodef-team-list.qodef-item-layout--info-below a {
 	pointer-events: none;
