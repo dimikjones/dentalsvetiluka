@@ -12,6 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	$whatsapp_phone = allsmiles_core_get_post_value_through_levels( 'qodef_dsl_floating_contact_actions_whatsapp_number' );
 	$viber_phone    = allsmiles_core_get_post_value_through_levels( 'qodef_dsl_floating_contact_actions_viber_number' );
 
+	// Hard codded because of translations not working.
+	$phone          = '+381653110153';
+	$whatsapp_phone = '0653110153';
+	$viber_phone    = '381653110153';
+
 	if ( $phone_enabled && ! empty( $phone ) ) :
 		?>
 		<a class="dsl-contact-action dsl-contact-phone" aria-label="<?php esc_attr_e( 'Позови Ординацију', 'dentalsvetiluka' ); ?>" href="tel:<?php echo esc_attr( $phone ); ?>">
